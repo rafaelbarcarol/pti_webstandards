@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTI Web Standards</title>
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <header class="header js-header">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="#home-banner">
+            <p>📸</p>
+            <p>FF</p>
+          </a>
+        </li>
+        <li class="header__list__item">
+          <a href="#home-about">Sobre</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#home-services">Serviços</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#home-benefits">Vantagens</a>
+        </li>
+        <li class="header__list__item">
+          <a href="#home-contact">Contato</a>
+        </li>
+      </ul>
+    </header>
+    <header class="mobile-header">
+      <div class="mobile-header__opening js-mobile-header"></div>
+      <div class="mobile-header__menu js-mobile-header-menu">
+        <div class="close js-close-mobile-header-menu">X</div>
+        <div class="mobile-header__menu__wrapper">
+          <ul class="mobile-header__menu__list">
+            <li class="menu-item">
+              <a class="js-mobile-header-link" href="#home-about">Sobre</a>
+            </li>
+            <li class="menu-item">
+              <a class="js-mobile-header-link" href="#home-services"
+                >Serviços</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="js-mobile-header-link" href="#home-benefits"
+                >Vantagens</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="js-mobile-header-link" href="#home-contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="home">
+      <section class="home__banner" id="home-banner">
+        <div class="home__banner__content">
+          <h1>
+            Registros <strong>eternizam</strong><br />
+            momentos especiais
+          </h1>
+          <button class="js-home-banner-button">Conheça meu trabalho</button>
+        </div>
+        <div class="home__banner__background">
+          <video
+            src="./media/pixabay_video.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
+      </section>
+      <section class="home__about js-home-about" id="home-about">
+        <div class="home__about__left">
+          <div class="image-wrapper">
+            <img src="/media/pixabay_img-1.jpg" alt="árvores e natureza" />
+          </div>
+          <div class="image-wrapper">
+            <img src="/media/pixabay_img-2.jpg" alt="água e natureza" />
+          </div>
+        </div>
+        <div
+          class="home__about__right rellax"
+          data-rellax-speed="3"
+          data-rellax-percentage="0.5"
+        >
+          <h2>Sobre Mim</h2>
+          <p>
+            Sou FF, o Fotógrafo Fictício!<br /><br />
+            Criado para ser o personagem de um trabalho do curso de Análise e
+            Desenvolvimento de Sistemas.<br /><br />
+            Esta seção conta um pouco sobre quem eu sou. As mídias utilizadas
+            nesse projeto foram selecionadas no site Pixabay.
+          </p>
+        </div>
+      </section>
+      <section class="home__services" id="home-services">
+        <div class="home__services__upper">
+          <h2>Meus Serviços</h2>
+          <p>Transformo experiências e momentos em registros eternos</p>
+        </div>
+        <div class="home__services__cards">
+          <div class="card">
+            <img src="/media/pixabay_img-5.jpg" alt="montanhas e natureza" />
+            <span>Fotografia</span>
+          </div>
+          <div class="card">
+            <img src="/media/pixabay_img-4.jpg" alt="montanhas e natureza" />
+            <span>Filmagem</span>
+          </div>
+          <div class="card">
+            <img src="/media/pixabay_img-3.jpg" alt="lago, pessoa e natureza" />
+            <span>Identidade Visual</span>
+          </div>
+        </div>
+      </section>
+      <section class="home__benefits" id="home-benefits">
+        <div class="home__benefits__slider slider-benefits-carousel">
+          <div class="item">
+            <img src="/media/pixabay-6.jpg" alt="pessoa fotografando" />
+            <span class="item-span">Profissional experiente</span>
+          </div>
+          <div class="item">
+            <img src="/media/pixabay-7.jpg" alt="câmera fotográfica" />
+            <span class="item-span">Experiência consolidada</span>
+          </div>
+          <div class="item">
+            <img src="/media/pixabay-8.jpg" alt="câmera fotográfica" />
+            <span class="item-span">Referência na região</span>
+          </div>
+        </div>
+      </section>
+      <section class="home__contact" id="home-contact">
+        <div class="home__contact__left">
+          <h3>Entre em contato</h3>
+        </div>
+        <div class="home__contact__right">
+          <form action="">
+            <h3>(Formulário apenas de marcação)</h3>
+            <fieldset>
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" />
+            </fieldset>
+            <fieldset>
+              <label for="phone">Telefone</label>
+              <input type="text" name="phone" id="phone" />
+            </fieldset>
+            <fieldset>
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message"></textarea>
+            </fieldset>
+            <button type="submit" class="js-form-info">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__list">
+        <div class="footer__list__item">
+          <h4>ENDEREÇO</h4>
+          <p>Rua de Exemplo, Bairro Fictício</p>
+        </div>
+        <div class="footer__list__item">
+          <h4>E-MAIL</h4>
+          <p>emailficticio@email.ficticio.com</p>
+        </div>
+        <div class="footer__list__item">
+          <h4>TELEFONE</h4>
+          <p>(##)#####-####</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/main.js" defer></script>
+  </body>
+</html>
