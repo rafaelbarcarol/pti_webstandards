@@ -442,14 +442,9 @@ html {
       position: relative;
       height: 100%;
       width: 100%;
-      &:before {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        content: "📸";
-        font-size: 2rem;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     &__menu {
